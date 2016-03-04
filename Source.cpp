@@ -89,9 +89,12 @@ int main()
 	cout << "outlier: ";
 	for (int i = 0; i < Length; i++)
 	{
-		if (n[i]<out1 || n[i]>out1)
-			cout <<n[i]<<" , ";
-		else cout << "no outlier";
+		if (n[i]<out1 || n[i]>out2)
+			cout << n[i] << " , ";
+		else {
+			cout << "no outlier";
+			break;
+		}
 	}
 
 
